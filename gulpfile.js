@@ -31,14 +31,18 @@ gulp.task('stylus', function () {
 // gulp.task('compile', function () {
 
 //   var pathSearch = './**/*.styl',
-//       otherFiles = './stylus/**/!(*.styl)',
+//       //otherFiles = './stylus/**/!(*.styl)',
 //       pathDest = './assets';
 
 //   // gulp.src(otherFiles)
 //   //   .pipe(gulp.dest(pathDest));
 
-//   gulp.src(filesStylus)
-//     .pipe(stylus())
+//   gulp.src(['./**/*.styl'])
+//     .pipe(stylus({
+//       use: [nib()],
+//       set:['compress'],
+//       import: ['nib']
+//     }))
 //     .pipe(gulp.dest('./assets'));
 // });
 
