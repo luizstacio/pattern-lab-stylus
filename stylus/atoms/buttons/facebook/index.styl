@@ -1,0 +1,23 @@
+@import '../index.styl'
+
+@font-face
+  font-family facebook
+  src: url('assets/icons/facebook.eot?-lzukky');
+  src: url('assets/icons/facebook.eot?#iefix-lzukky') format('embedded-opentype'),
+     url('assets/icons/facebook.woff?-lzukky') format('woff'),
+     url('assets/icons/facebook.ttf?-lzukky') format('truetype'),
+     url('assets/icons/facebook.svg?-lzukky#facebook') format('svg');
+  font-weight normal
+  font-style normal
+
+.atom-button-facebook
+  atom-button()
+  background #4c66a4
+  color #FFF
+  font-family Hevletica
+
+.atom-button-facebook:before
+  content '\e600'
+  font-family facebook
+  margin .2em
+  vertical-align baseline

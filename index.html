@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylus Pattern Lab</title>
+</head>
+<body>
+  <h1>Stylus Pattern Lab</h1>
+
+  <h2>Atoms</h2>
+  <section>
+    <link rel="stylesheet" href="./assets/atoms/inputs/text/index.css">
+    <article>
+      <h4>atom-input-text</h4>
+      <input type="text" class="atom-input-text">
+    </article>
+  </section>
+  <section>
+    <link rel="stylesheet" href="./assets/atoms/inputs/email/index.css">
+    <article>
+      <h4>atom-input-email</h4>
+      <input type="email" class="atom-input-email">
+    </article>
+  </section>
+  <section>
+    <link rel="stylesheet" href="./assets/atoms/inputs/password/index.css">
+    <article>
+      <h4>atom-input-password</h4>
+      <input type="password" class="atom-input-password">
+    </article>
+  </section>
+  <section>
+    <link rel="stylesheet" href="./assets/atoms/buttons/index.css">
+    <article>
+      <h4>atom-button</h4>
+      <button class="atom-button">Button</button>
+    </article>
+  </section>
+
+  <h2>Molecules</h2>
+  <section>
+    <link rel="stylesheet" href="./assets/atoms/inputs/text.css">
+    <article>
+      <h4>molecule-social-buttons</h4>
+      <link rel="stylesheet" href="./assets/atoms/buttons/facebook/index.css">
+      <button class="atom-button-facebook">Facebook</button>
+      <button class="atom-button-twitter">Twitter</button>
+      <button class="atom-button-gplus">Plus</button>
+    </article>
+  </section>
+  <section>
+    <article>
+      <h4>molecule-social-buttons COLAPSED</h4>
+      <div class='molecule-social-login-buttons-wrapper'>
+        <button class="atom-button-facebook">Facebook</button>
+        <button class="atom-button-twitter">Twitter</button>
+        <button class="atom-button-gplus">Plus</button>
+      </div>
+    </article>
+  </section>
+
+  <h2>Organisms</h2>
+  <br>
+  <section>
+    <article>
+      <h4>organism-login</h4>
+      <div class='organism-login'>
+        <div class='molecule-social-login-buttons-wrapper'>
+          <button class="atom-button-facebook">Facebook</button>
+          <button class="atom-button-twitter">Twitter</button>
+          <button class="atom-button-gplus">Plus</button>
+        </div>
+        <input type="email" class="atom-input atom-input-email" placeholder="teste@teste.com">
+        <input type="password" class="atom-input atom-input-password" placeholder="Password">
+        <button class="atom-button-save">Salvar</button>
+      </div>
+    </article>
+  </section>
+  <br>
+  <section>
+    <article>
+      <h4>organism-cadastro</h4>
+      <div class='organism-cadastro'>
+        <div class='molecule-social-login-buttons-wrapper'>
+          <button class="atom-button-facebook">Facebook</button>
+          <button class="atom-button-twitter">Twitter</button>
+          <button class="atom-button-gplus">Plus</button>
+        </div>
+        <form action="">
+          <input type="email" class="atom-input atom-input-email" placeholder="teste@teste.com">
+          <input type="password" class="atom-input atom-input-password" placeholder="Password">
+          <input type="password" class="atom-input atom-input-password" placeholder="Confirm password">
+          <button class="atom-button-save">Salvar</button>
+        </form>
+      </div>
+    </article>
+  </section>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "pattern-lab-stylus",
+  "version": "0.0.1",
+  "description": "pattern lab for stylus",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-stylus": "^1.1.0",
+    "nib": "^1.0.3",
+    "gulp-clean": "^0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luizstacio/pattern-lab-stylus.git"
+  },
+  "keywords": [
+    "pattern",
+    "lab",
+    "stylus"
+  ],
+  "bugs": {
+    "url": "https://github.com/luizstacio/pattern-lab-stylus/issues"
+  },
+  "homepage": "https://github.com/luizstacio/pattern-lab-stylus"
+}
