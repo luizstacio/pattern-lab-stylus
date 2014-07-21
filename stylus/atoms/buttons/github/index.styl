@@ -1,0 +1,26 @@
+@import '../index.styl'
+
+@font-face
+  font-family github
+  src: url('assets/icons/github.eot?-lzukky');
+  src: url('assets/icons/github.eot?#iefix-lzukky') format('embedded-opentype'),
+     url('assets/icons/github.woff?-lzukky') format('woff'),
+     url('assets/icons/github.ttf?-lzukky') format('truetype'),
+     url('assets/icons/github.svg?-lzukky#github') format('svg');
+  font-weight normal
+  font-style normal
+
+.atom-button-github
+  atom-button()
+  background #F6F6F6
+  color #333333
+  font-size 18px
+  font-family helvetica
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+.atom-button-github:before
+  content '\e600'
+  font-family github
+  margin 0 5px
+  vertical-align baseline
