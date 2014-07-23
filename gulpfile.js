@@ -13,7 +13,7 @@ gulp.task('stylus', function () {
         pathSearch = pathFile + '/**/*.styl',
         otherFiles = pathFile + '/**/!(*.styl)',
         pathDest = pathFile.replace('/stylus/', '/assets/');
-      
+    
     gulp.src(otherFiles)
       .pipe(gulp.dest(pathDest));
 
@@ -23,7 +23,8 @@ gulp.task('stylus', function () {
         set:['compress'],
         import: ['nib']
       }))
-      .pipe(gulp.dest(pathDest));
+      .pipe(gulp.dest(pathDest))
+  
   });
 
 });

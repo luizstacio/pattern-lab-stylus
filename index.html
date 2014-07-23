@@ -53,7 +53,7 @@
   <section>
     <article>
       <h4>molecule-social-buttons COLAPSED</h4>
-      <div class='molecule-social-login-buttons-wrapper'>
+      <div class="molecule-social-buttons">
         <button class="atom-button-facebook">Facebook</button>
         <button class="atom-button-github">github</button>
         <button class="atom-button-gplus">Google+</button>
@@ -66,35 +66,46 @@
   <section>
     <article>
       <h4>organism-login</h4>
-      <div class='organism-login'>
-        <div class='molecule-social-login-buttons-wrapper'>
+      <div class="organism-user-login">
+        <!-- Style from molecule social buttons -->
+        <link rel="stylesheet" href="./assets/molecules/social/buttons/index.css">
+        <!-- Style from atom button save -->
+        <link rel="stylesheet" href="./assets/atoms/buttons/save/index.css">
+
+        <div class="molecule-social-buttons">
           <button class="atom-button-facebook">Facebook</button>
           <button class="atom-button-github">github</button>
           <button class="atom-button-gplus">Google+</button>
         </div>
         <input type="email" class="atom-input atom-input-email" placeholder="teste@teste.com">
         <input type="password" class="atom-input atom-input-password" placeholder="Password">
-      <link rel="stylesheet" href="./assets/atoms/buttons/save/index.css">
         <button class="atom-button-save">Salvar</button>
       </div>
     </article>
   </section>
   <br>
-  <section>
+<section>
     <article>
-      <h4>organism-cadastro</h4>
-      <div class='organism-cadastro'>
-        <div class='molecule-social-login-buttons-wrapper'>
+      <h4>organism-login</h4>
+      
+      <!--  -->
+      <link rel="stylesheet" href="./assets/organisms/user/login/index.css">
+
+      <div class="organism-user-login">
+        <!-- Style from molecule social buttons -->
+        <link rel="stylesheet" href="./assets/molecules/social/buttons/index.css">
+        <!-- Style from atom button save -->
+        <link rel="stylesheet" href="./assets/atoms/buttons/save/index.css">
+
+        <div class="molecule-social-buttons">
           <button class="atom-button-facebook">Facebook</button>
           <button class="atom-button-github">github</button>
           <button class="atom-button-gplus">Google+</button>
         </div>
-        <form action="">
-          <input type="email" class="atom-input atom-input-email" placeholder="teste@teste.com">
-          <input type="password" class="atom-input atom-input-password" placeholder="Password">
-          <input type="password" class="atom-input atom-input-password" placeholder="Confirm password">
-          <button class="atom-button-save">Salvar</button>
-        </form>
+        <input type="email" class="atom-input atom-input-email" placeholder="teste@teste.com">
+        <input type="password" class="atom-input atom-input-password" placeholder="Password">
+        <input type="password" class="atom-input atom-input-password" placeholder="Confirm password">
+        <button class="atom-button-save">Salvar</button>
       </div>
     </article>
   </section>
