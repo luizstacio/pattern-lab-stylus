@@ -29,22 +29,14 @@ gulp.task('stylus', function () {
 
 });
 
-// gulp.task('compile', function () {
-
-//   var pathSearch = './**/*.styl',
-//       //otherFiles = './stylus/**/!(*.styl)',
-//       pathDest = './assets';
-
-//   // gulp.src(otherFiles)
-//   //   .pipe(gulp.dest(pathDest));
-
-//   gulp.src(['./**/*.styl'])
-//     .pipe(stylus({
-//       use: [nib()],
-//       set:['compress'],
-//       import: ['nib']
-//     }))
-//     .pipe(gulp.dest('./assets'));
-// });
+gulp.task('compile', function () {
+  gulp.src(['stylus/**/*.styl', '!stylus/*.styl'])
+    .pipe(stylus({
+      use: [nib()],
+      set:['compress'],
+      import: ['nib']
+    }))
+    .pipe(gulp.dest('./assets'));
+});
 
 gulp.task('default', ['stylus']);
