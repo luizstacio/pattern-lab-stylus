@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "pattern lab for stylus",
   "main": "gulpfile.js",
-  "scripts": {},
+  "scripts": {
+    "start": "gulp compile"
+  },
   "author": "Suissa & Luiz Estacio",
   "license": "WTFPL",
   "devDependencies": {
